@@ -48,7 +48,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="accent-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Benefits -->
@@ -455,6 +455,18 @@
             </li>
           </ul>
         </div>
+        <div class="subskribe-container">
+          <p class="subskribe-title">Подпишитесь на рассылку</p>
+          <div class="subskribe-form">
+            <input type="email" placeholder="E-mail" />
+            <button class="accent-btn subskribe-btn" type="submit">
+              Подписаться
+              <svg class="subskribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- Modal -->
@@ -465,6 +477,46 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form>
+          <p class="modal-caption">Оставьте свои данные, мы вам перезвоним</p>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <svg class="modal-item-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+              <label for="id-name">Имя</label>
+              <input type="text" name="name" id="id-name" />
+            </li>
+            <li class="modal-item">
+              <svg class="modal-item-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+              <label for="id-tel">Телефон</label>
+              <input type="tel" name="phone-number" id="id-tel" />
+            </li>
+            <li class="modal-item">
+              <svg class="modal-item-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+              <label for="id-mail">Почта</label>
+              <input type="email" name="email" id="id-mail" />
+            </li>
+            <li class="modal-item">
+              <label for="id-comment">Комментарий</label>
+              <textarea name="comment" id="id-comment" rows="10" placeholder="Введите текст">
+              </textarea>
+            </li>
+          </ul>
+          <div class="modal-policy">
+            <input type="checkbox" name="policy" id="id-policy" />
+            <label for="id-policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="policy-link" href="">Условия договора</a>
+            </label>
+          </div>
+
+          <button class="modal-submit accent-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
