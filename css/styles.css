@@ -655,18 +655,36 @@ button {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-}
-.modal-policy input {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-  background-color: var(--title-text-color);
-}
-.modal-policy label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primay-text-color);
+}
+.policy-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+.modal-policy input:checked + .policy-icon {
+  border-color: var(--brand-color);
+  background-color: var(--brand-color);
+  background-image: url(../images/icon/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+.modal-policy input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .policy-link {
   color: var(--brand-color);
