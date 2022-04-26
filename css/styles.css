@@ -9,7 +9,7 @@
   --bg-color-third: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
   --cubic-bazier: cubic-bezier(0.4, 0, 0.2, 1);
-  --time: 250ms;
+  --time: 2500ms;
 }
 
 body {
@@ -570,6 +570,12 @@ button {
   background-color: var(--bg-color-primary);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: var(--time) var(--cubic-bazier);
+}
+.modal-close-icon {
+  fill: var(--third-text-color);
+  transition: var(--time) var(--cubic-bazier);
 }
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
