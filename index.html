@@ -457,7 +457,7 @@
         </div>
         <div class="subskribe-container">
           <p class="subskribe-title">Подпишитесь на рассылку</p>
-          <div class="subskribe-form">
+          <form class="subskribe-form">
             <input type="email" placeholder="E-mail" />
             <button class="accent-btn subskribe-btn" type="submit">
               Подписаться
@@ -465,7 +465,7 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -477,41 +477,33 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form>
+        <form class="modal-list">
           <p class="modal-caption">Оставьте свои данные, мы вам перезвоним</p>
-          <ul class="modal-list">
-            <li class="modal-item">
-              <label for="id-name">Имя</label>
-              <input type="text" name="name" id="id-name" />
-              <svg class="modal-item-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-modal-person"></use>
-              </svg>
-            </li>
-            <li class="modal-item">
-              <label for="id-tel">Телефон</label>
-              <input type="tel" name="phone-number" id="id-tel" />
-              <svg class="modal-item-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-modal-phone"></use>
-              </svg>
-            </li>
-            <li class="modal-item">
-              <label for="id-mail">Почта</label>
-              <input type="email" name="email" id="id-mail" />
-              <svg class="modal-item-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-modal-email"></use>
-              </svg>
-            </li>
-            <li class="modal-item">
-              <label for="id-comment">Комментарий</label>
-              <textarea
-                name="comment"
-                id="id-commen"
-                rows="10"
-                placeholder="Введите текст"
-              ></textarea>
-            </li>
-          </ul>
-
+          <label class="modal-item" for="id-name">
+            <span class="modal-label">Имя</span>
+            <input type="text" name="name" id="id-name" />
+            <svg class="modal-item-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-modal-person"></use>
+            </svg>
+          </label>
+          <label class="modal-item" for="id-tel">
+            <span class="modal-label">Телефон</span>
+            <input type="tel" name="phone-number" id="id-tel" />
+            <svg class="modal-item-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-modal-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-item" for="id-mail">
+            <span class="modal-label">Почта</span>
+            <input type="email" name="email" id="id-mail" />
+            <svg class="modal-item-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-modal-email"></use>
+            </svg>
+          </label>
+          <label class="modal-item modal-comment">
+            <span class="modal-label">Комментарий</span>
+            <textarea name="comment" rows="10" placeholder="Введите текст"></textarea>
+          </label>
           <label class="modal-policy">
             <input type="checkbox" name="policy" />
             <span class="policy-icon"></span>

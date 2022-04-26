@@ -583,7 +583,6 @@ button {
 .modal-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 .modal-item {
   position: relative;
@@ -591,8 +590,11 @@ button {
   flex-direction: column;
   margin-bottom: 10px;
 }
+.modal-comment {
+  margin-bottom: 20px;
+}
 
-.modal-item label {
+.modal-label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
